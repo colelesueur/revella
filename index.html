@@ -19,7 +19,7 @@
     --paper-warm: #ede9e2;
     --paper-card: #ffffff;
     --rule: rgba(26,24,20,0.1);
-    --accent: #b52b4e;
+    --accent: #8b1a2f;
     --serif: 'DM Serif Display', Georgia, serif;
     --sans: 'DM Sans', system-ui, sans-serif;
   }
@@ -86,11 +86,6 @@
     opacity: 0;
     animation: fadeUp 0.6s ease 0.2s forwards;
     max-width: 640px;
-  }
-
-  .hero h1 em {
-    font-style: italic;
-    color: var(--ink-soft);
   }
 
   .hero-sub {
@@ -323,6 +318,60 @@
     letter-spacing: 0.03em;
   }
 
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    border-top: 0.5px solid var(--rule);
+  }
+
+  .faq-item:last-child {
+    border-bottom: 0.5px solid var(--rule);
+  }
+
+  .faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink);
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .faq-question:hover { color: var(--ink-soft); }
+
+  .faq-icon {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--ink-muted);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    line-height: 1;
+  }
+
+  .faq-answer {
+    display: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    padding-bottom: 1.25rem;
+    max-width: 560px;
+  }
+
+  .faq-item.open .faq-answer { display: block; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+
   footer {
     max-width: 760px;
     margin: 0 auto;
@@ -361,7 +410,7 @@
 </nav>
 
 <div class="hero">
-  <h1>Swipe <span style="color: #8b1a2f;">left</span> on superficial<br>dating apps.</h1>
+  <h1>Swipe <span style="color: #8b1a2f;">left</span> on superficial dating apps.</h1>
   <p class="hero-sub"><strong style="color: var(--ink); font-weight: 500;">Dating apps don't work for most people.</strong> 80% of users get ignored before they say a single word. You're judged on a photo in under a second. Revella matches you on compatibility first, then a short blind voice call. Photos come last. For people who are great in person.</p>
   <a href="#join" class="hero-cta">Join the founding waitlist ↓</a>
 </div>
@@ -435,6 +484,143 @@
   </div>
 </section>
 
+<section id="faq">
+  <p class="section-label">FAQ</p>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What is Revella?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Revella is a dating app designed to prioritize compatibility and real connection before appearance. Instead of swiping through photos, you are matched based on shared values and lifestyle alignment, then invited to a 20-minute blind voice call with cameras off and no photos. After the call, if both people want to continue, photos are revealed and introductions are made. If either person declines, the match ends privately.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Is Revella free?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes. Revella is currently free to use during the beta. A paid subscription tier will be introduced later with additional features and increased matching access.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Why do I have to complete the intake before matching?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The intake is what makes matching meaningful. Most dating apps match people based on photos and minimal profile information. Revella uses a 40-question intake to understand your values, lifestyle, relationship patterns, and what you're actually looking for, so matches are based on compatibility instead of guesswork.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How long does the intake take?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Most users complete it in 5 to 15 minutes.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Who sees my intake answers?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Revella uses your answers internally solely for matching. Your matches do not see your intake responses before, during, or after a Pod.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How does matching work?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Revella first applies your non-negotiables, then matches you based on deeper compatibility signals such as lifestyle fit, values, and relationship intent. During the beta, matches are reviewed to ensure quality.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How long does it take to get matched?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Timing depends on your filters and the local user pool. Most beta users receive a match within 1 to 2 weeks after completing the intake.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What is a Pod?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        A Pod is a scheduled 20-minute blind voice call between two matched users. Cameras are off and photos are not shared beforehand. After the call, both users privately decide whether to continue.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What happens after the call?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        If both people choose to continue, photos are shared and an introduction is made. If either person declines, the match ends privately and respectfully.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Can I leave the call early?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes. If you feel uncomfortable at any point, you can leave immediately. Safety comes first.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Is my personal information shared?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        No. Your contact details are only shared if both users choose to proceed after the Pod. Your intake answers are never shared with other users.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What if someone behaves inappropriately?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        You can end the call and report the experience. Revella reviews all reports and takes misconduct seriously.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Where is Revella available?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Revella is currently launching in Vancouver. Expansion will happen city by city once each market has enough users to support high-quality matching.
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section id="join">
   <p class="section-label">Join the founding waitlist</p>
   <p class="join-intro">After signing up you'll complete a short compatibility intake. This is what makes the matching work. Takes about 10 minutes. If that sounds like too much effort, Revella probably isn't for you, and that's okay.</p>
@@ -461,6 +647,15 @@
   <p>Revella · Launching in Vancouver</p>
   <p>revella.ca</p>
 </footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
 
 </body>
 </html>
