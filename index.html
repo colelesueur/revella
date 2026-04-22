@@ -78,7 +78,7 @@
 
   .hero h1 {
     font-family: var(--serif);
-    font-size: clamp(42px, 7vw, 72px);
+    font-size: clamp(38px, 6vw, 64px);
     line-height: 1.08;
     letter-spacing: -0.5px;
     color: var(--ink);
@@ -318,6 +318,31 @@
     letter-spacing: 0.03em;
   }
 
+  .faq-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+  }
+
+  .faq-section-icon {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--ink-muted);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    line-height: 1;
+  }
+
+  .faq-toggle.open .faq-section-icon {
+    transform: rotate(45deg);
+  }
+
   .faq-list {
     display: flex;
     flex-direction: column;
@@ -341,7 +366,7 @@
     border: none;
     cursor: pointer;
     font-family: var(--sans);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--ink);
     text-align: left;
@@ -351,7 +376,7 @@
   .faq-question:hover { color: var(--ink-soft); }
 
   .faq-icon {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     color: var(--ink-muted);
     flex-shrink: 0;
@@ -485,8 +510,11 @@
 </section>
 
 <section id="faq">
-  <p class="section-label">FAQ</p>
-  <div class="faq-list">
+  <button class="faq-toggle" onclick="toggleFaqSection(this)">
+    <p class="section-label" style="margin-bottom: 0;">FAQ</p>
+    <span class="faq-section-icon">+</span>
+  </button>
+  <div class="faq-list" id="faq-list" style="display: none; margin-top: 2rem;">
 
     <div class="faq-item">
       <button class="faq-question" onclick="toggleFaq(this)">
@@ -649,6 +677,18 @@
 </footer>
 
 <script>
+  function toggleFaqSection(btn) {
+    const list = document.getElementById('faq-list');
+    const isOpen = btn.classList.contains('open');
+    if (isOpen) {
+      btn.classList.remove('open');
+      list.style.display = 'none';
+    } else {
+      btn.classList.add('open');
+      list.style.display = 'flex';
+    }
+  }
+
   function toggleFaq(btn) {
     const item = btn.closest('.faq-item');
     const isOpen = item.classList.contains('open');
