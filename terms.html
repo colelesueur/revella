@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Revella</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1814;
+    --ink-soft: #5a5650;
+    --ink-muted: #9a9690;
+    --paper: #f7f4ef;
+    --paper-warm: #ede9e2;
+    --rule: rgba(26,24,20,0.1);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    border-bottom: 0.5px solid var(--rule);
+    background: var(--paper);
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.3px;
+  }
+
+  .nav-back {
+    font-size: 13px;
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  .nav-back:hover { color: var(--ink); }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+  }
+
+  .doc-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--ink-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: normal;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+  }
+
+  .doc-meta {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--ink-muted);
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid var(--rule);
+  }
+
+  .intro {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 3rem;
+    padding: 1.5rem 1.75rem;
+    background: var(--paper-warm);
+    border-radius: 8px;
+    border: 0.5px solid var(--rule);
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--ink);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0.75rem 0 1rem 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 0.4rem;
+  }
+
+  .section {
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid var(--rule);
+    margin-bottom: 0.5rem;
+  }
+
+  .section:last-of-type {
+    border-bottom: none;
+  }
+
+  .highlight {
+    background: var(--paper-warm);
+    border: 0.5px solid var(--rule);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .highlight p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  a {
+    color: var(--ink);
+    text-underline-offset: 2px;
+  }
+
+  footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.5px solid var(--rule);
+  }
+
+  footer p {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  @media (max-width: 560px) {
+    nav { padding: 1rem 1.25rem; }
+    .container { padding: 2.5rem 1.25rem 4rem; }
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://colelesueur.github.io/revella" class="nav-logo">Revella</a>
+  <a href="https://colelesueur.github.io/revella" class="nav-back">← Back to Revella</a>
+</nav>
+
+<div class="container">
+
+  <p class="doc-label">Legal</p>
+  <h1>Terms of Service</h1>
+  <p class="doc-meta">Last updated: April 2026 · Revella, Vancouver, BC, Canada</p>
+
+  <div class="intro">
+    Please read these Terms of Service carefully before using Revella. By creating an account or using our platform, you agree to be bound by these terms. If you do not agree, do not use Revella.
+  </div>
+
+  <div class="section">
+    <h2>1. Who we are</h2>
+    <p>Revella is a compatibility-first voice dating platform based in Vancouver, British Columbia, Canada. We operate the Revella app and website, including all related services.</p>
+    <p>If you have questions about these terms, contact us at <a href="mailto:privacy@revella.ca">privacy@revella.ca</a>.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 18 years old to use Revella. By creating an account, you confirm that you are 18 or older. If we discover that a user is under 18, we will immediately terminate their account.</p>
+    <p>You must also be a resident of the geographic area where Revella is currently operating. During the beta, this is limited to Vancouver, BC.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Your account</h2>
+    <p>You are responsible for maintaining the security of your account and for all activity that occurs under it. You agree to provide accurate, current, and complete information when creating your account, including during the compatibility intake.</p>
+    <p>You may not create an account on behalf of someone else, use a false identity, or create multiple accounts. Revella reserves the right to suspend or terminate accounts that violate these terms.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. How Revella works</h2>
+    <p>Revella matches users based on compatibility data collected through our intake process. Matches are reviewed by our team before being confirmed. After matching, users are invited to a scheduled 20-minute blind voice call — a Pod — with cameras off and no photos shared in advance.</p>
+    <p>After a Pod, both users privately decide whether to share their photos with each other. If both say yes, photos are revealed simultaneously. If either person declines, the match ends privately and no one is notified of who declined.</p>
+  </div>
+
+  <div class="section">
+    <h2>5. Acceptable use</h2>
+    <p>You agree to use Revella honestly and respectfully. You must not:</p>
+    <ul>
+      <li>Use Revella for any unlawful purpose</li>
+      <li>Harass, threaten, or abuse other users</li>
+      <li>Share explicit, offensive, or misleading content</li>
+      <li>Impersonate another person or misrepresent yourself</li>
+      <li>Upload photos that are not of yourself, or photos that are misleading about your appearance</li>
+      <li>Use Revella to solicit money, promote products or services, or engage in commercial activity</li>
+      <li>Attempt to access other users' accounts or data</li>
+      <li>Reverse engineer, scrape, or interfere with the platform in any way</li>
+    </ul>
+    <p>Violations may result in immediate account termination and, where applicable, referral to law enforcement.</p>
+  </div>
+
+  <div class="section">
+    <h2>6. Photo verification and content</h2>
+    <p>Revella requires users to submit a verification selfie to confirm their identity. This photo is reviewed by our team only and is never shared with other users or third parties.</p>
+    <p>By uploading photos to Revella, you confirm that you own the rights to those images and that they accurately represent you. You grant Revella a limited license to store and display your photos to your matches in accordance with our platform's reveal process.</p>
+    <p>Revella does not sell, license, or publicly display your photos. They are only ever shared with a specific matched user if both parties consent to the reveal.</p>
+  </div>
+
+  <div class="section">
+    <h2>7. Scheduling and conduct</h2>
+    <p>Once a Pod is scheduled, both users are expected to attend. Cancelling within 24 hours of a scheduled Pod, or failing to attend without notice, is a strike against your account. Three strikes may result in account suspension.</p>
+    <p>During a Pod, you are expected to treat the other person with respect. Harassment, explicit language, threats, or any behaviour that makes the other person feel unsafe is grounds for immediate account termination.</p>
+    <p>Users can report conduct at any time through the app. Revella reviews all reports seriously.</p>
+  </div>
+
+  <div class="section">
+    <h2>8. Limitation of liability</h2>
+    <div class="highlight">
+      <p>Revella is responsible only for conduct that occurs within the platform — including voice calls, messages, and interactions through the app itself. We are not responsible for what happens outside the platform, including any in-person meetings users choose to arrange independently.</p>
+    </div>
+    <p>Revella does not conduct criminal background checks on users. Meeting someone in person is entirely at your own discretion and risk. We strongly encourage users to meet in public places and to trust their instincts.</p>
+    <p>To the maximum extent permitted by law, Revella's total liability to you for any claim arising from your use of the platform is limited to the amount you have paid to Revella in the twelve months preceding the claim, or $100 CAD, whichever is greater.</p>
+    <p>Revella is not liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data, loss of revenue, or personal injury arising from your use of the platform or from interactions with other users on or off the platform.</p>
+  </div>
+
+  <div class="section">
+    <h2>9. No guarantees</h2>
+    <p>Revella makes no guarantee that you will find a romantic match, that any match will lead to a relationship, or that any information provided by other users is accurate. We do our best to create conditions for genuine connection, but outcomes are entirely between the people involved.</p>
+    <p>The platform is provided "as is." We do not guarantee uninterrupted or error-free service.</p>
+  </div>
+
+  <div class="section">
+    <h2>10. Account termination</h2>
+    <p>You may delete your account at any time through the app. Upon deletion, your account is scheduled for permanent removal after 30 days, during which you may reactivate it by logging back in.</p>
+    <p>Revella reserves the right to suspend or permanently terminate any account that violates these terms, without prior notice. In cases of serious misconduct — including harassment, threats, or illegal behaviour — termination is immediate.</p>
+  </div>
+
+  <div class="section">
+    <h2>11. Privacy</h2>
+    <p>Your privacy matters to us. How we collect, use, and protect your personal information is described in our <a href="https://colelesueur.github.io/revella/privacy.html">Privacy Policy</a>, which forms part of these Terms of Service.</p>
+  </div>
+
+  <div class="section">
+    <h2>12. Changes to these terms</h2>
+    <p>We may update these Terms of Service from time to time. When we do, we will update the date at the top of this page. Continued use of Revella after changes are posted constitutes your acceptance of the updated terms.</p>
+    <p>For significant changes, we will make reasonable efforts to notify users through the app or by email.</p>
+  </div>
+
+  <div class="section">
+    <h2>13. Governing law</h2>
+    <p>These Terms of Service are governed by the laws of the Province of British Columbia and the federal laws of Canada applicable therein. Any disputes arising from your use of Revella will be resolved in the courts of British Columbia.</p>
+  </div>
+
+  <div class="section">
+    <h2>14. Contact</h2>
+    <p>If you have questions about these terms or want to report a concern, contact us at <a href="mailto:privacy@revella.ca">privacy@revella.ca</a>.</p>
+    <p>Remember to update this email address before public launch.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>Revella · Vancouver, BC</p>
+  <p><a href="https://colelesueur.github.io/revella/privacy.html" style="color: var(--ink-muted); text-decoration: none;">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
