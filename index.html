@@ -505,7 +505,7 @@
     </div>
     <div class="stat">
       <div class="stat-num">56%</div>
-      <div class="stat-text">Of women on dating apps have received an unsolicited explicit image. Structurally impossible on Revella, no photos until both people say yes.</div>
+      <div class="stat-text">Of women on dating apps have received an unsolicited explicit image. Structurally impossible on Revella — no photos until both people say yes.</div>
     </div>
   </div>
 </section>
@@ -595,7 +595,7 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-answer">
-        Revella first applies your non-negotiables, then matches you based on deeper compatibility signals such as lifestyle fit, values, and relationship intent. During the beta, matches are reviewed to ensure quality.
+        Matching on Revella happens in three stages. First, we filter by your dealbreakers — things like age range, whether you want kids, and distance. No one gets past this step if they don't meet your non-negotiables. Second, we run a compatibility matrix across your intake answers, looking at lifestyle fit, communication style, relationship intent, emotional availability, and values alignment. Third, every potential match is reviewed by our team before it's confirmed. We don't send matches we wouldn't stand behind. During the beta especially, that human layer is what separates Revella from an algorithm guessing at chemistry.
       </div>
     </div>
 
@@ -679,22 +679,22 @@
 
 <script>
   function toggleFaqSection(btn) {
-    const list = document.getElementById('faq-list');
-    const isOpen = btn.classList.contains('open');
+    const list = document.getElementById('faq-list')
+    const isOpen = btn.classList.contains('open')
     if (isOpen) {
-      btn.classList.remove('open');
-      list.style.display = 'none';
+      btn.classList.remove('open')
+      list.style.display = 'none'
     } else {
-      btn.classList.add('open');
-      list.style.display = 'flex';
+      btn.classList.add('open')
+      list.style.display = 'flex'
     }
   }
 
   function toggleFaq(btn) {
-    const item = btn.closest('.faq-item');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+    const item = btn.closest('.faq-item')
+    const isOpen = item.classList.contains('open')
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'))
+    if (!isOpen) item.classList.add('open')
   }
 </script>
 
